@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import scrollIntoView from "scroll-into-view-if-needed";
 
-function Navbar() {
+function Navbar(props) {
   const submitOnClick = (e) => {
     const scroll = document.getElementsByClassName(e.target.value)[0];
     console.log(scroll);
@@ -16,6 +16,9 @@ function Navbar() {
       navbarLinks.classList.toggle("active");
     });
   }, []);
+
+  const languageSel = props.language === "English" ? "Hindi" : "English";
+
   return (
     <nav>
       <section className="logo">
@@ -51,6 +54,15 @@ function Navbar() {
           <li>
             <button onClick={(e) => submitOnClick(e)} value="projectsWrapper">
               My Projects
+            </button>
+          </li>
+
+          <li>
+            <button
+              onClick={() => props.onChange(languageSel)}
+              value="projectsWrapper"
+            >
+              {languageSel}
             </button>
           </li>
         </ul>

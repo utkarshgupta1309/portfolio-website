@@ -1,8 +1,11 @@
 import React from "react";
 import WebText from "../TextData";
 
-function Accomplishments() {
-  const accomplishments = WebText.home.accomplishments;
+function Accomplishments({ language }) {
+  const accomplishments =
+    language === "English"
+      ? WebText.home.accomplishments
+      : WebText.HIHome.accomplishments;
 
   return (
     <section className="accomplishments">

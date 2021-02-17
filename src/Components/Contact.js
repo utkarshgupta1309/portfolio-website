@@ -1,8 +1,9 @@
 import React from "react";
 import WebText from "../TextData";
 
-function Contact() {
-  const contact = WebText.home.contact;
+function Contact({ language }) {
+  const contact =
+    language === "English" ? WebText.home.contact : WebText.HIHome.contact;
   return (
     <section className="contact">
       <h2>{contact.heading}</h2>

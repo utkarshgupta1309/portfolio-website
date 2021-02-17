@@ -1,8 +1,9 @@
 import React from "react";
 import WebText from "../TextData";
 
-function Skills() {
-  const skills = WebText.home.skills;
+function Skills({ language }) {
+  const skills =
+    language === "English" ? WebText.home.skills : WebText.HIHome.skills;
   return (
     <section className="skillsWrapper">
       <h2 className="heading">My Skills</h2>

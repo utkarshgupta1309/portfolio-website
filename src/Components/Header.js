@@ -3,15 +3,16 @@ import Navbar from "./Navbar";
 import WebText from "../TextData";
 import scrollIntoView from "scroll-into-view-if-needed";
 
-function Header() {
+function Header({ language, onChange }) {
   const submitOnClick = (e) => {
     const scroll = document.getElementsByClassName(e.target.value)[0];
     scrollIntoView(scroll, { behavior: "smooth", scrollMode: "if-needed" });
   };
-  const header = WebText.home.header;
+  const header =
+    language === "English" ? WebText.home.header : WebText.HIHome.header;
   return (
     <header>
-      <Navbar />
+      <Navbar language={language} onChange={onChange} />
       <div className="dark-header grid">
         <div className="content">
           <h1 className="light-font">{header.headings.greeting}</h1>

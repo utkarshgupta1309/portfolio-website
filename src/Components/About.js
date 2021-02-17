@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import WebText from "../TextData";
 
-function About() {
-  const about = WebText.home.about;
+function About({ language }) {
+  const about =
+    language === "English" ? WebText.home.about : WebText.HIHome.about;
   return (
     <section className="about">
       <article

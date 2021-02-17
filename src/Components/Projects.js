@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import WebText from "../TextData";
 
-function Projects() {
-  const projects = WebText.home.projects;
+function Projects({ language }) {
+  const projects =
+    language === "English" ? WebText.home.projects : WebText.HIHome.projects;
   const [currProject, setCurrProject] = useState(projects.projectsList[0]);
   const [currImg, setCurrImg] = useState(0);
   useEffect(() => {
