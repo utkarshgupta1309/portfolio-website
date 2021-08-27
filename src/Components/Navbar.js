@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import scrollIntoView from "scroll-into-view-if-needed";
 
 function Navbar(props) {
@@ -22,13 +22,13 @@ function Navbar(props) {
   return (
     <nav>
       <section className="logo">
-        <img src="/Assests/Images/logo.png" alt="logo" />
+        <img src="/Assests/Images/logo_black.png" alt="logo" />
       </section>
-      <a href="#" className="toggle-button">
+      <button className="toggle-button">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
-      </a>
+      </button>
       <div className="navbar-links">
         <ul>
           <li>

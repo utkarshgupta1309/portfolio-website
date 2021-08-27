@@ -11,7 +11,7 @@ function Contact({ language }) {
         {contact.socialIcons.map((icon, i) => {
           i = i + 1;
           return (
-            <a key={i} href={icon.link} target="_blank">
+            <a rel="noopener noreferrer" key={i} href={icon.link} target="_blank">
               <h1>{icon.ico}</h1>
             </a>
           );

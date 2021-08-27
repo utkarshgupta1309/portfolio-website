@@ -1,7 +1,14 @@
-import { FaSchool, FaUniversity, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaSchool,
+  FaUniversity,
+  FaReact,
+  FaNodeJs,
+  FaFigma,
+  FaLaptopCode
+} from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
-import { DiMongodb, DiPhotoshop } from "react-icons/di";
+import { DiMongodb, DiPhotoshop, DiSass, DiCss3 } from "react-icons/di";
 import { BsPen } from "react-icons/bs";
 
 import {
@@ -29,15 +36,9 @@ if (WebsiteText === null) {
       about: {
         heading: "About me",
         aboutTxt:
-          'As a motivated and determined student, I like to think of myself as creative and dependable. "Always Looking for more bearable ways to live life." I read and cook sometimes. ',
+          'As a motivated and determined student, I like to think of myself as creative and dependable. ',
       },
       accomplishments: [
-        {
-          icon: <FaSchool />,
-          title: "Higher Education",
-          description:
-            "1st division in PCM (89%) from Mother Teresa School, Bhopal",
-        },
         {
           icon: <FaUniversity />,
           title: "Graduation",
@@ -45,24 +46,31 @@ if (WebsiteText === null) {
             "BTech focused on Computer Science and Business Systems from Bharati Vidyapeeth, Pune. (2022)",
         },
         {
+          icon: <FaLaptopCode />,
+          title: "Freelance Experience",
+          description: "Full Stack Developer at Spool",
+        },
+        {
+          icon: <MdWork />,
+          title: "Internship",
+          description: "Full Stack Developer at Spool",
+        },
+        ,
+        {
           icon: <MdWork />,
           title: "Internship",
           description:
             "Content writer and Graphic designer with Gyanbox(Jan 2020  - May 2020)",
         },
+
         {
-          icon: <MdWork />,
-          title: "Internship",
-          description: "React developer with Tawi Tech Solutions. ",
-        },
-        {
-          icon: <GrUserManager />,
-          title: "Freelancing Experience",
+          icon: <FaLaptopCode />,
+          title: "Freelance Experience",
           description: "Web developer with  Spell bathing.",
         },
         {
-          icon: <GrUserManager />,
-          title: "Freelancing Experience",
+          icon: <FaLaptopCode />,
+          title: "Freelance Experience",
           description: "Web developer with Kidzee Waghbil Thane",
         },
       ],
@@ -91,8 +99,12 @@ if (WebsiteText === null) {
         },
         { icon: <FaNodeJs />, title: "Node JS" },
         { icon: <DiMongodb />, title: "MongoDB" },
+        { icon: <AiFillHtml5 />, title: "HTML" },
+        { icon: <DiCss3 />, title: "CSS" },
+        { icon: <DiSass />, title: "SASS/SCSS" },
         { icon: <DiPhotoshop />, title: "Adobe PhotoShop" },
-        { icon: <AiFillHtml5 />, title: "HTML/CSS" },
+        { icon: <FaFigma />, title: "Figma" },
+
         { icon: <BsPen />, title: "Content Writing" },
       ],
       projects: {
@@ -154,15 +166,35 @@ if (WebsiteText === null) {
           },
           {
             id: 4,
-            title: "Kidzee Website(Freelance Project)",
-            description: "Official Website of Kidzee Waghbil ",
-            techUsed: ["HTML CSS"],
+            title: "CRUD CLI Tool",
+            description: "CLI tool for User management",
+            techUsed: ["Node Js", "MongoDB", "Inquirer"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/KW1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/KW2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/KW3.png" },
+              { id: 1, src: "/Assests/Images/ProjectImg/CLI1.png" },
+              { id: 2, src: "/Assests/Images/ProjectImg/CLI2.png" },
+              { id: 3, src: "/Assests/Images/ProjectImg/CLI3.png" },
             ],
-            link: "http://evlearningco.com/",
+            link: "https://github.com/utkarshgupta1309/cms-cli",
+          },
+          {
+            id: 5,
+            title: "RegExp Password strength meter ",
+            description: "Does what it says. It can be easily intergrated in any user authentication page",
+            techUsed: ["HTML CSS", "Vanilla Javascript"],
+            projectsImg: [
+              { id: 1, src: "/Assests/Images/ProjectImg/PSM.png" },
+            ],
+            link: "https://passwrd-str-meter.netlify.app/",
+          },
+          {
+            id: 6,
+            title: "Greenbacks! Ideas tracker",
+            description: "A chrome extension better than bookmarks! Save any webpage url as an idea/lead or input your own with our custom input field.",
+            techUsed: ["HTML CSS", "Vanilla Javascript"],
+            projectsImg: [
+              { id: 1, src: "/Assests/Images/ProjectImg/IT1.png" },
+            ],
+            link: "https://github.com/utkarshgupta1309/Lead-tracker-chrome-extension",
           },
         ],
       },

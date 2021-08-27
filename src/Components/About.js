@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import WebText from "../TextData";
 
 function About({ language }) {
@@ -13,7 +13,7 @@ function About({ language }) {
         }}
       >
         <div className="image-here">
-          <img alt="Utkarsh Gupta" src="/Assests/Images/me.png"></img>
+          <img alt="Utkarsh Gupta" src="/Assests/Images/me1BW.png"></img>
         </div>
       </article>
       <article className="about-txt">

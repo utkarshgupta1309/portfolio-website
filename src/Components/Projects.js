@@ -46,26 +46,27 @@ function Projects({ language }) {
                       setCurrImg(e.target.src);
                     }}
                   >
-                    <img key={img.id} src={img.src}></img>
+                    <img key={img.id} alt ='' src={img.src}></img>
                   </button>
                 );
               })}
             </div>
             <div className="bigImg">
-              <img src={currImg} alt="" />
+              <img src={currImg} style={{border:"5px solid #d0d0d0", borderRadius: "10px"}} alt="" />
+              <img id='monitor-bottom' alt = '' src = '/Assests/Images/monitor-bottom.png'/>
             </div>
           </div>
           <div className="projectsTxt">
             <h3>{currProject.title}</h3>
             <p>{currProject.description}</p>
+            <br></br>
             <ul className="techUsed">
-              <br></br>
-              <h4>The App Uses: </h4>
+            <h4>This Project Uses: </h4>
               {currProject.techUsed.map((tech, i) => {
                 i = i + 1;
                 return (
                   <li key={i}>
-                    <i>{tech}</i>
+                    <p>{tech}</p>
                   </li>
                 );
               })}

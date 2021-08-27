@@ -6,6 +6,7 @@ import Contact from "../Components/Contact";
 import Skills from "../Components/Skills";
 import Projects from "../Components/Projects";
 import Footer from "../Components/Footer";
+// import Test from "../Components/Test";
 
 function Home() {
   const [language, setLanguage] = useState("English");

@@ -20,15 +20,6 @@ function Footer() {
           <h4>
             Built on React <FaReact />
           </h4>
-          <p>
-            Liked the website? Check out the source code{" "}
-            <a
-              href="https://github.com/utkarshgupta1309/portfolio-website.git"
-              target="_blank"
-            >
-              here
-            </a>
-          </p>
         </div>
       </div>
     </section>
