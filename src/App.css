@@ -693,10 +693,11 @@ html {
     margin: 0 auto;
   }
   .image-here img {
-    width: 200px;
+    width: 330px;
     height: auto;
     position: absolute;
     top: -60px;
+    left: -65px;
   }
   .about-txt {
     margin: 0 auto;
