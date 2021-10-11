@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
-import { DiMongodb, DiPhotoshop, DiSass, DiCss3 } from "react-icons/di";
+import { DiMongodb, DiPhotoshop, DiSass, DiCss3, DiJavascript1, DiMysql } from "react-icons/di";
 import { BsPen } from "react-icons/bs";
 
 import {
@@ -36,14 +36,14 @@ if (WebsiteText === null) {
       about: {
         heading: "About me",
         aboutTxt:
-          'As a motivated and determined student, I like to think of myself as creative and dependable. ',
+          'I create Progressive web applications (PWAs), Hybrid mobile apps for android and IOS users and build visually pleasing and reliable websites.',
       },
       accomplishments: [
         {
           icon: <FaUniversity />,
           title: "Graduation",
           description:
-            "BTech focused on Computer Science and Business Systems from Bharati Vidyapeeth, Pune. (2022)",
+            "Bachelor of Technology in Computer Science and Business System",
         },
         {
           icon: <FaLaptopCode />,
@@ -51,9 +51,9 @@ if (WebsiteText === null) {
           description: "Full Stack Developer at Spool",
         },
         {
-          icon: <MdWork />,
-          title: "Internship",
-          description: "Full Stack Developer at Spool",
+          icon: <FaLaptopCode />,
+          title: "Freelance Experience",
+          description: "React Native developer at Spell Bathing Company LLC",
         },
         ,
         {
@@ -86,10 +86,10 @@ if (WebsiteText === null) {
             ico: <AiOutlineGithub />,
           },
           { link: "mailto:utkarshgupta1309@gmail.com", ico: <AiOutlineMail /> },
-          {
-            link: "https://www.instagram.com/13utkarsh/",
-            ico: <AiOutlineInstagram />,
-          },
+          // {
+          //   link: "https://www.instagram.com/13utkarsh/",
+          //   ico: <AiOutlineInstagram />,
+          // },
         ],
       },
       skills: [
@@ -98,14 +98,17 @@ if (WebsiteText === null) {
           title: "React ",
         },
         { icon: <FaNodeJs />, title: "Node JS" },
+        { icon: <FaReact />, title: "React Native" },
+        { icon: <DiJavascript1 />, title: "Javascript" },
+        { icon: <DiMysql />, title: "SQL" },
         { icon: <DiMongodb />, title: "MongoDB" },
         { icon: <AiFillHtml5 />, title: "HTML" },
         { icon: <DiCss3 />, title: "CSS" },
         { icon: <DiSass />, title: "SASS/SCSS" },
         { icon: <DiPhotoshop />, title: "Adobe PhotoShop" },
         { icon: <FaFigma />, title: "Figma" },
-
         { icon: <BsPen />, title: "Content Writing" },
+        
       ],
       projects: {
         heading: "My Projects",
@@ -136,8 +139,39 @@ if (WebsiteText === null) {
             ],
             link: "https://hospital-nba.herokuapp.com/",
           },
+          
           {
             id: 2,
+            title: "Expense Tracker using React",
+            description: "A simple and elegant React Expense tracker.",
+            techUsed: ["React"],
+            projectsImg: [{ id: 1, src: "/Assests/Images/ProjectImg/ET1.png" }],
+            link: "https://react-expense-tracker-2020.herokuapp.com/",
+          },
+          {
+            id: 3,
+            title: "CRUD CLI Tool",
+            description: "CLI tool for User management",
+            techUsed: ["Node Js", "MongoDB", "Inquirer"],
+            projectsImg: [
+              { id: 1, src: "/Assests/Images/ProjectImg/CLI1.png" },
+              { id: 2, src: "/Assests/Images/ProjectImg/CLI2.png" },
+              { id: 3, src: "/Assests/Images/ProjectImg/CLI3.png" },
+            ],
+            link: "https://github.com/utkarshgupta1309/cms-cli",
+          },
+          {
+            id: 4,
+            title: "RegExp Password strength meter ",
+            description: "Does what it says. It can be easily intergrated in any user authentication page",
+            techUsed: ["HTML CSS", "Vanilla Javascript"],
+            projectsImg: [
+              { id: 1, src: "/Assests/Images/ProjectImg/PSM.png" },
+            ],
+            link: "https://passwrd-str-meter.netlify.app/",
+          },
+          {
+            id: 5,
             title: "E-commerce Website using Contentful",
             description:
               "A fully functional modern E-commerce website built on JavaScript. Inlcludes Checkout using Stripe API. Content management using Contenful GUI for a user friendly inventory management. User login with Authentication.",
@@ -154,37 +188,7 @@ if (WebsiteText === null) {
               { id: 2, src: "/Assests/Images/ProjectImg/EW2.png" },
               { id: 3, src: "/Assests/Images/ProjectImg/EW3.png" },
             ],
-            link: "https://e-commerce-spell-bathing.herokuapp.com/",
-          },
-          {
-            id: 3,
-            title: "Expense Tracker using React",
-            description: "A simple and elegant React Expense tracker.",
-            techUsed: ["React"],
-            projectsImg: [{ id: 1, src: "/Assests/Images/ProjectImg/ET1.png" }],
-            link: "https://react-expense-tracker-2020.herokuapp.com/",
-          },
-          {
-            id: 4,
-            title: "CRUD CLI Tool",
-            description: "CLI tool for User management",
-            techUsed: ["Node Js", "MongoDB", "Inquirer"],
-            projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/CLI1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/CLI2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/CLI3.png" },
-            ],
-            link: "https://github.com/utkarshgupta1309/cms-cli",
-          },
-          {
-            id: 5,
-            title: "RegExp Password strength meter ",
-            description: "Does what it says. It can be easily intergrated in any user authentication page",
-            techUsed: ["HTML CSS", "Vanilla Javascript"],
-            projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/PSM.png" },
-            ],
-            link: "https://passwrd-str-meter.netlify.app/",
+            link: "https://e-commerce-spell-bathing.herokuapp.com/categories",
           },
           {
             id: 6,
@@ -263,10 +267,10 @@ if (WebsiteText === null) {
             ico: <AiOutlineGithub />,
           },
           { link: "mailto:utkarshgupta1309@gmail.com", ico: <AiOutlineMail /> },
-          {
-            link: "https://www.instagram.com/13utkarsh/",
-            ico: <AiOutlineInstagram />,
-          },
+          // {
+          //   link: "https://www.instagram.com/13utkarsh/",
+          //   ico: <AiOutlineInstagram />,
+          // },
         ],
       },
       skills: [

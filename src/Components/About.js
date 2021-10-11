@@ -13,7 +13,7 @@ function About({ language }) {
         }}
       >
         <div className="image-here">
-          <img alt="Utkarsh Gupta" src="/Assests/Images/me1BW.png"></img>
+          <img alt="Utkarsh Gupta" src="/Assests/Images/meBW3.png"></img>
         </div>
       </article>
       <article className="about-txt">

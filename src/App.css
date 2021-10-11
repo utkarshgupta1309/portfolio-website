@@ -203,7 +203,7 @@ nav {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0rem;
+  padding: 2rem 1rem;
   background-color: var(--primary-color);
   border-radius: 20px;
 }
@@ -213,6 +213,8 @@ nav {
   background-repeat: no-repeat;
   margin: 1rem;
   display: block;
+  transform: rotate(
+180deg);
 }
 .image-here {
   width: 280px;
@@ -221,10 +223,12 @@ nav {
   position: relative;
 }
 .image-here img {
-  width: 500px;
+  width: 400px;
   position: absolute;
-  top: -80px;
-  left: -120px;
+  top: -28px;
+  left: -68px;
+  transform: rotate(180deg);
+
 }
 .about-txt h3 {
   color: var(--accent-color);
@@ -693,11 +697,11 @@ html {
     margin: 0 auto;
   }
   .image-here img {
-    width: 330px;
+    width: 260px;
     height: auto;
     position: absolute;
-    top: -60px;
-    left: -65px;
+    top: -19px;
+    left: -29px;
   }
   .about-txt {
     margin: 0 auto;
