@@ -77,7 +77,7 @@ nav {
   justify-content: space-between;
 }
 .logo img {
-  width: 80px;
+  width: 50px;
   margin: 1rem;
 }
 
@@ -111,6 +111,10 @@ nav {
   padding: 2px;
   border: 0px;
 }
+.navbar-links li button:hover {
+  color: var(--highlight-color);
+}
+
 
 .toggle-button {
   position: absolute;
@@ -178,13 +182,12 @@ nav {
   padding: 5px;
   position: absolute;
   top: 20%;
-  left: 30%;
+  left: 40%;
   cursor: pointer;
 }
 .contact-btn:hover {
-  background-color: grey;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--highlight-color);
+  border: 1px solid var(--highlight-color);
 }
 .header-divider {
   max-width: 1000px;
@@ -683,7 +686,7 @@ html {
     justify-items: center;
   }
   .about-img {
-    background-image: url("./Assests/Images/about-img-bg-small.svg") !important;
+    background-image: url("./Assets/Images/about-img-bg-small.svg") !important;
     min-width: 100px;
     width: 230px;
     height: 230px;
@@ -859,6 +862,11 @@ html {
   .footer-txt {
     width: 220px;
     font-size: 0.8rem;
+  }
+  .contact-btn {
+    position: absolute;
+    top: 20%;
+    left: 25%;
   }
 }
 /* * {

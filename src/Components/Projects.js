@@ -53,7 +53,7 @@ function Projects({ language }) {
             </div>
             <div className="bigImg">
               <img src={currImg} style={{border:"5px solid #d0d0d0", borderRadius: "10px"}} alt="" />
-              <img id='monitor-bottom' alt = '' src = '/Assests/Images/monitor-bottom.png'/>
+              <img id='monitor-bottom' alt = '' src = 'portfolio-website/assets/Images/monitor-bottom.png'/>
             </div>
           </div>
           <div className="projectsTxt">

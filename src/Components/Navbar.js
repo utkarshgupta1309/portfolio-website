@@ -22,7 +22,7 @@ function Navbar(props) {
   return (
     <nav>
       <section className="logo">
-        <img src="/Assests/Images/logo_black.png" alt="logo" />
+        <img src={process.env.PUBLIC_URL +'/assets/Images/logo_black.png'} alt="logo" />
       </section>
       <button className="toggle-button">
         <span className="bar"></span>

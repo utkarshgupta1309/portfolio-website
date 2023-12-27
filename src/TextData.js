@@ -4,7 +4,9 @@ import {
   FaReact,
   FaNodeJs,
   FaFigma,
-  FaLaptopCode
+  FaLaptopCode,
+  FaVuejs,
+  FaJava
 } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
@@ -30,52 +32,45 @@ if (WebsiteText === null) {
         headings: {
           greeting: "Hello,",
           intro: "I'm Utkarsh Gupta",
-          title: "Full Stack Developer",
+          title: "Web and Software Engineer - Java, Vue.js, React, Node.js",
         },
       },
       about: {
         heading: "About me",
         aboutTxt:
-          'I create Progressive web applications (PWAs), Hybrid mobile apps for android and IOS users and build visually pleasing and reliable websites.',
+          "I'm a Software Engineer with solid skills. I'm really good with Java, making powerful and efficient computer applications. I'm also into Vue.js, where I create cool and easy-to-use websites. At Factset, I've worked on different projects, making sure everything works well behind the scenes and looks great on the front end. I love taking on new challenges and working on projects that push the limits of what we can do with technology.",
       },
       accomplishments: [
+        {
+          icon: <MdWork />,
+          title: "Full-time Experience",
+          description: "Software Engineer at <b>Factset</b>",
+        },
         {
           icon: <FaUniversity />,
           title: "Graduation",
           description:
-            "Bachelor of Technology in Computer Science and Business System",
+            "Bachelor of Technology from <b>Bharati Vidyapeeth College of Engineering</b>",
         },
         {
           icon: <FaLaptopCode />,
           title: "Freelance Experience",
-          description: "Full Stack Developer at Spool",
+          description: "Full Stack Developer at <b>Spool</b>",
         },
         {
           icon: <FaLaptopCode />,
           title: "Freelance Experience",
-          description: "React Native developer at Spell Bathing Company LLC",
+          description: "React Native developer at <b>Spell Bathing Company LLC</b>",
         },
         ,
         {
-          icon: <MdWork />,
-          title: "Internship",
-          description:
-            "Content writer and Graphic designer with Gyanbox(Jan 2020  - May 2020)",
-        },
-
-        {
           icon: <FaLaptopCode />,
           title: "Freelance Experience",
-          description: "Web developer with  Spell bathing.",
-        },
-        {
-          icon: <FaLaptopCode />,
-          title: "Freelance Experience",
-          description: "Web developer with Kidzee Waghbil Thane",
+          description: "Web developer with  <b>Spell bathing</b>",
         },
       ],
       contact: {
-        heading: "my friends call me Utkarsh but you can call me anytime.",
+        heading: "Let's Connect: Reach Out for Opportunities or Just a Tech Chat!",
         socialIcons: [
           {
             link: "https://www.linkedin.com/in/utkarsh-gupta-5696bb1a2/",
@@ -94,6 +89,14 @@ if (WebsiteText === null) {
       },
       skills: [
         {
+          icon: <FaJava />,
+          title: "Java",
+        },
+        {
+          icon: <FaVuejs />,
+          title: "Vue.Js ",
+        },
+        {
           icon: <FaReact />,
           title: "React ",
         },
@@ -102,12 +105,7 @@ if (WebsiteText === null) {
         { icon: <DiJavascript1 />, title: "Javascript" },
         { icon: <DiMysql />, title: "SQL" },
         { icon: <DiMongodb />, title: "MongoDB" },
-        { icon: <AiFillHtml5 />, title: "HTML" },
-        { icon: <DiCss3 />, title: "CSS" },
-        { icon: <DiSass />, title: "SASS/SCSS" },
-        { icon: <DiPhotoshop />, title: "Adobe PhotoShop" },
-        { icon: <FaFigma />, title: "Figma" },
-        { icon: <BsPen />, title: "Content Writing" },
+        { icon: <AiFillHtml5 />, title: "HTML/CSS" },
         
       ],
       projects: {
@@ -120,9 +118,9 @@ if (WebsiteText === null) {
               "This app helps you look up salons near you, read the reviews, check the ratings and look up the services provided by them and then make appointments for your visits accordingly.",
             techUsed: ["Node JS", "MongoDB", "Express JS", "HTML CSS"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/CT1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/CT2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/CT3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CT1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CT2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CT3.png" },
             ],
             link: "https://connect-trends.herokuapp.com/",
           },
@@ -133,9 +131,9 @@ if (WebsiteText === null) {
               "Features of this WebApp includes Registering complaint, Login and Signup to View Medical records",
             techUsed: ["Node JS", "MongoDB", "Express JS", "HTML CSS"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/HM1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/HM2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/HM3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/HM1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/HM2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/HM3.png" },
             ],
             link: "https://hospital-nba.herokuapp.com/",
           },
@@ -145,7 +143,7 @@ if (WebsiteText === null) {
             title: "Expense Tracker using React",
             description: "A simple and elegant React Expense tracker.",
             techUsed: ["React"],
-            projectsImg: [{ id: 1, src: "/Assests/Images/ProjectImg/ET1.png" }],
+            projectsImg: [{ id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/ET1.png" }],
             link: "https://react-expense-tracker-2020.herokuapp.com/",
           },
           {
@@ -154,9 +152,9 @@ if (WebsiteText === null) {
             description: "CLI tool for User management",
             techUsed: ["Node Js", "MongoDB", "Inquirer"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/CLI1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/CLI2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/CLI3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CLI1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CLI2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CLI3.png" },
             ],
             link: "https://github.com/utkarshgupta1309/cms-cli",
           },
@@ -166,7 +164,7 @@ if (WebsiteText === null) {
             description: "Does what it says. It can be easily intergrated in any user authentication page",
             techUsed: ["HTML CSS", "Vanilla Javascript"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/PSM.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/PSM.png" },
             ],
             link: "https://passwrd-str-meter.netlify.app/",
           },
@@ -184,9 +182,9 @@ if (WebsiteText === null) {
               "HTML CSS",
             ],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/EW1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/EW2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/EW3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/EW1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/EW2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/EW3.png" },
             ],
             link: "https://e-commerce-spell-bathing.herokuapp.com/categories",
           },
@@ -196,7 +194,7 @@ if (WebsiteText === null) {
             description: "A chrome extension better than bookmarks! Save any webpage url as an idea/lead or input your own with our custom input field.",
             techUsed: ["HTML CSS", "Vanilla Javascript"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/IT1.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/IT1.png" },
             ],
             link: "https://github.com/utkarshgupta1309/Lead-tracker-chrome-extension",
           },
@@ -294,9 +292,9 @@ if (WebsiteText === null) {
               "यह ऐप आपके आस-पास के सैलून देखने, समीक्षाओं को पढ़ने, रेटिंग्स की जांच करने और उनके द्वारा प्रदान की गई सेवाओं को देखने में मदद करता है और फिर उसी के अनुसार आपकी यात्राओं के लिए नियुक्तियां करता है।",
             techUsed: ["Node JS", "MongoDB", "Express JS", "HTML CSS"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/CT1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/CT2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/CT3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CT1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CT2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/CT3.png" },
             ],
             link: "https://connect-trends.herokuapp.com/",
           },
@@ -307,9 +305,9 @@ if (WebsiteText === null) {
               "इस वेबऐप की विशेषताओं में रजिस्टर शिकायत, लॉगिन और साइनअप देखने से लेकर मेडिकल रिकॉर्ड शामिल हैं",
             techUsed: ["Node JS", "MongoDB", "Express JS", "HTML CSS"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/HM1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/HM2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/HM3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/HM1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/HM2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/HM3.png" },
             ],
             link: "https://hospital-nba.herokuapp.com/",
           },
@@ -327,9 +325,9 @@ if (WebsiteText === null) {
               "HTML CSS",
             ],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/EW1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/EW2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/EW3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/EW1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/EW2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/EW3.png" },
             ],
             link: "https://e-commerce-spell-bathing.herokuapp.com/",
           },
@@ -338,7 +336,7 @@ if (WebsiteText === null) {
             title: "व्यय ट्रैकर",
             description: "एक सरल और सुरुचिपूर्ण React Expense tracker.",
             techUsed: ["React"],
-            projectsImg: [{ id: 1, src: "/Assests/Images/ProjectImg/ET1.png" }],
+            projectsImg: [{ id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/ET1.png" }],
             link: "https://react-expense-tracker-2020.herokuapp.com/",
           },
           {
@@ -347,9 +345,9 @@ if (WebsiteText === null) {
             description: "किड्जी वाघबिल की आधिकारिक वेबसाइट",
             techUsed: ["HTML CSS"],
             projectsImg: [
-              { id: 1, src: "/Assests/Images/ProjectImg/KW1.png" },
-              { id: 2, src: "/Assests/Images/ProjectImg/KW2.png" },
-              { id: 3, src: "/Assests/Images/ProjectImg/KW3.png" },
+              { id: 1, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/KW1.png" },
+              { id: 2, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/KW2.png" },
+              { id: 3, src: process.env.PUBLIC_URL + "/assets/Images/ProjectImg/KW3.png" },
             ],
             link: "http://evlearningco.com/",
           },

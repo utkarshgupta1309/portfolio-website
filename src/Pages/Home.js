@@ -5,7 +5,7 @@ import Accomplishments from "../Components/Accomplishments";
 import Contact from "../Components/Contact";
 import Skills from "../Components/Skills";
 import Projects from "../Components/Projects";
-import Footer from "../Components/Footer";
+// import Footer from "../Components/Footer";
 // import Test from "../Components/Test";
 
 function Home() {
@@ -22,7 +22,7 @@ function Home() {
       <Contact language={language} onChange={handleChange} />
       <Skills language={language} onChange={handleChange} />
       <Projects language={language} onChange={handleChange} />
-      <Footer language={language} onChange={handleChange} />
+      {/* <Footer language={language} onChange={handleChange} /> */}
     </>
   );
 }
